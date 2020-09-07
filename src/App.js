@@ -1,24 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggle = () => setDropdownOpen(!dropdownOpen);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav tabs>
+        <NavItem>
+          <NavLink href="#" active>Link</NavLink>
+        </NavItem>
+        <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
+          <DropdownToggle nav caret>
+            Dropdown
+          </DropdownToggle>
+          <DropdownMenu>
+            <DropdownItem header>Header</DropdownItem>
+            <DropdownItem disabled>Action</DropdownItem>
+            <DropdownItem>Another Action</DropdownItem>
+            <DropdownItem divider />
+            <DropdownItem>Another Action</DropdownItem>
+          </DropdownMenu>
+        </Dropdown>
+        <NavItem>
+          <NavLink href="#">Link</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="#">Another Link</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink disabled href="#">Disabled Link</NavLink>
+        </NavItem>
+      </Nav>
     </div>
   );
 }
