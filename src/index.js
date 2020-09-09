@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom'
-import './index.css';
-import Main from './Main/Main';
-import Header from './header/Header';
-import App from './app/App';
-import Body from './body/Body';
-import Footer from './footer/Footer';
+import './css/index.css';
+import Tab from './Tab';
+import Footer from './components/Footer';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render((
   <BrowserRouter>
-    <Main />
+    <Tab />
+    <Footer />
   </BrowserRouter>
 ), document.getElementById('root'));
 
