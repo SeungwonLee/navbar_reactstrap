@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom'
 import './css/index.css';
-import Tab from './Tab';
+import Tab from './components/Tab';
 import Footer from './components/Footer';
 import * as serviceWorker from './serviceWorker';
 

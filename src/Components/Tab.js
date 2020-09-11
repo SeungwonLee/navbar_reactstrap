@@ -1,8 +1,8 @@
 import React, { Component, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link, NavLink as RRNavLink } from 'react-router-dom';
 import { Nav, NavItem, NavLink } from 'reactstrap';
-import Header from './components/Header'
-import Body from './components/Body'
+import Header from '../pages/Intro'
+import Body from '../pages/Body'
 
 class Tab extends Component {
   render() {
