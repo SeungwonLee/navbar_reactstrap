@@ -1,10 +1,8 @@
 import React, { Component, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
+import { Nav, NavItem, NavLink } from 'reactstrap';
 import Header from './components/Header'
 import Body from './components/Body'
-import './css/App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Tab extends Component {
   render() {
