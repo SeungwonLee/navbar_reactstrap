@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom';
 import { Tab, Footer } from 'components'
-import { Intro, Body } from 'pages'
+import { Intro, Work, Fun } from 'pages'
 
 class App extends Component {
   render() {
@@ -10,7 +10,8 @@ class App extends Component {
         <Tab />
         <Switch>
           <Route exact path='/' component={Intro} />
-          <Route exact path='/works' component={Body} />
+          <Route exact path='/works' component={Work} />
+          <Route exact path='/fun' component={Fun} />
         </Switch>
         <Footer />
       </div>

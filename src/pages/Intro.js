@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/Intro.css';
 
-const Header = () => {
+const Intro = () => {
   return (
     <div class="container">
       <div class="page-header">
@@ -13,4 +13,4 @@ const Header = () => {
   );
 }
 
-export default Header;
+export default Intro;

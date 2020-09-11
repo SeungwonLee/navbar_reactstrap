@@ -11,13 +11,10 @@ class Tab extends Component {
             <NavLink exact to={"/"} tag={RRNavLink} activeClassName="active"><Link to={'/'}>Main</Link></NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to={"/works"} tag={RRNavLink} activeClassName="active"><Link to={'/works'}>Works</Link></NavLink>
+            <NavLink to={"/works"} tag={RRNavLink} activeClassName="active"><Link to={'/works'}>Work Experience</Link></NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to={"/foo"}>Another Link</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink disabled to={"/less"}>Disabled Link</NavLink>
+            <NavLink to={"/fun"} tag={RRNavLink} activeClassName="active"><Link to={'/fun'}>Fun</Link></NavLink>
           </NavItem>
         </Nav>
 
