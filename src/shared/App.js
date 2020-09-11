@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom';
-import { Tab, Footer } from 'components'
-import { Intro, Work, Fun } from 'pages'
+import Tab from '../components/Tab'
+import Footer from '../components/Footer'
+import Intro from '../pages/Intro'
+import Work from '../pages/Work'
+import Fun from '../pages/Fun'
 
 class App extends Component {
   render() {
