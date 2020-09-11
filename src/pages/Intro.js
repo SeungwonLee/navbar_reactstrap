@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/Header.css';
+import '../css/Intro.css';
 
 const Header = () => {
   return (
@@ -7,7 +7,7 @@ const Header = () => {
       <div class="page-header">
         <h2>Hello, I'm Seungwon Lee,</h2>
         <hr></hr>
-        <h3>a Android developer from South of Korea.</h3>
+        <h4>a Android developer from South of Korea.</h4>
       </div>
     </div>
   );
