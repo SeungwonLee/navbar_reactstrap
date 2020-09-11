@@ -1,0 +1,32 @@
+.title {
+  font-size: 1.125rem;
+  color: #434E5E;
+}
+
+.title-margin {
+  margin-bottom: 0.7rem !important;
+}
+
+.description {
+  margin-left: 0.5rem;
+}
+
+.description-margin {
+  margin-bottom: 0.4rem !important;
+}
+
+.row-container{
+  width: auto;
+  max-width: 1400px;
+  align-content: center;
+  margin: 30px 20px;
+}
+
+.since {
+  font-size: 0.875rem;
+  color: #aab4c3;
+}
+
+.font-weight-bold {
+  font-weight: bolder !important;
+}

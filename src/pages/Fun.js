@@ -1,126 +1,56 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-  Card, CardImg, CardText, CardBody, CardLink,
-  CardTitle, CardSubtitle
-} from 'reactstrap';
+import { Card, CardBody, Button, CardTitle, CardText, CardImg } from 'reactstrap';
 
 class Body extends Component {
   render() {
     return (
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-6">
             <Card>
+              <CardImg top width="100%" src="https://images.unsplash.com/photo-1563725911583-7d108f720483" alt="Card image cap" />
               <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
-              </CardBody>
-              <img width="100%" src="https://images.unsplash.com/photo-1563725911583-7d108f720483" alt="Card image cap" />
-              <CardBody>
-                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                <CardLink href="#">Card Link</CardLink>
-                <CardLink href="#">Another Link</CardLink>
+                <CardTitle>Card Title</CardTitle>
+                <CardText>
+                  <small className="text-muted">Last updated 3 mins ago</small>
+                </CardText>
               </CardBody>
             </Card>
           </div>
-          <div class="col-3">
+          <div class="col-6">
             <Card>
+              <CardImg top width="100%" src="https://images.unsplash.com/photo-1563725911583-7d108f720483" alt="Card image cap" />
               <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
-              </CardBody>
-              <img width="100%" src="https://images.unsplash.com/photo-1563725911583-7d108f720483" alt="Card image cap" />
-              <CardBody>
-                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                <CardLink href="#">Card Link</CardLink>
-                <CardLink href="#">Another Link</CardLink>
-              </CardBody>
-            </Card>
-          </div>
-          <div class="col-3">
-            <Card>
-              <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
-              </CardBody>
-              <img width="100%" src="https://images.unsplash.com/photo-1563725911583-7d108f720483" alt="Card image cap" />
-              <CardBody>
-                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                <CardLink href="#">Card Link</CardLink>
-                <CardLink href="#">Another Link</CardLink>
-              </CardBody>
-            </Card>
-          </div>
-          <div class="col-3">
-            <Card>
-              <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
-              </CardBody>
-              <img width="100%" src="https://images.unsplash.com/photo-1563725911583-7d108f720483" alt="Card image cap" />
-              <CardBody>
-                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                <CardLink href="#">Card Link</CardLink>
-                <CardLink href="#">Another Link</CardLink>
+                <CardTitle>Card Title</CardTitle>
+                <CardText>
+                  <small className="text-muted">Last updated 3 mins ago</small>
+                </CardText>
               </CardBody>
             </Card>
           </div>
         </div>
+        <hr></hr>
         <div class="row">
-          <div class="col-3">
+          <div class="col-6">
             <Card>
+              <CardImg top width="100%" src="https://images.unsplash.com/photo-1563725911583-7d108f720483" alt="Card image cap" />
               <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
-              </CardBody>
-              <img width="100%" src="https://images.unsplash.com/photo-1563725911583-7d108f720483" alt="Card image cap" />
-              <CardBody>
-                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                <CardLink href="#">Card Link</CardLink>
-                <CardLink href="#">Another Link</CardLink>
+                <CardTitle>Card Title</CardTitle>
+                <CardText>
+                  <small className="text-muted">Last updated 3 mins ago</small>
+                </CardText>
               </CardBody>
             </Card>
           </div>
-          <div class="col-3">
+          <div class="col-6">
             <Card>
+              <CardImg top width="100%" src="https://images.unsplash.com/photo-1563725911583-7d108f720483" alt="Card image cap" />
               <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
-              </CardBody>
-              <img width="100%" src="https://images.unsplash.com/photo-1563725911583-7d108f720483" alt="Card image cap" />
-              <CardBody>
-                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                <CardLink href="#">Card Link</CardLink>
-                <CardLink href="#">Another Link</CardLink>
-              </CardBody>
-            </Card>
-          </div>
-          <div class="col-3">
-            <Card>
-              <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
-              </CardBody>
-              <img width="100%" src="https://images.unsplash.com/photo-1563725911583-7d108f720483" alt="Card image cap" />
-              <CardBody>
-                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                <CardLink href="#">Card Link</CardLink>
-                <CardLink href="#">Another Link</CardLink>
-              </CardBody>
-            </Card>
-          </div>
-          <div class="col-3">
-            <Card>
-              <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
-              </CardBody>
-              <img width="100%" src="https://images.unsplash.com/photo-1563725911583-7d108f720483" alt="Card image cap" />
-              <CardBody>
-                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                <CardLink href="#">Card Link</CardLink>
-                <CardLink href="#">Another Link</CardLink>
+                <CardTitle>Card Title</CardTitle>
+                <CardText>
+                  <small className="text-muted">Last updated 3 mins ago</small>
+                </CardText>
               </CardBody>
             </Card>
           </div>
