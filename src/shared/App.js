@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom';
-import Tab from '../components/tab'
-import Footer from '../components/footer'
+import Tab from '../components/Tab'
+import Footer from '../components/Footer'
 import Intro from '../pages/Intro'
 import Work from '../pages/Work'
 import Fun from '../pages/Fun'
@@ -10,7 +10,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet"></link>
         <Tab />
         <Switch>
           <Route exact path='/' component={Intro} />
