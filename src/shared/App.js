@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom';
 import Tab from '../components/Tab'
-import Footer from '../components/fFooter'
+import Footer from '../components/Footer'
 import Intro from '../pages/Intro'
 import Work from '../pages/Work'
 import Fun from '../pages/Fun'
