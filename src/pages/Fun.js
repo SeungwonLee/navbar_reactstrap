@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, CardBody, Button, CardTitle, CardText, CardImg } from 'reactstrap';
 
-class Body extends Component {
+class Fun extends Component {
   render() {
     return (
       <div class="container">
@@ -60,4 +60,4 @@ class Body extends Component {
   }
 }
 
-export default Body;
+export default Fun;
