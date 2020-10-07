@@ -1,24 +1,54 @@
-import React from 'react'
+import React, { Component } from 'react'
 import '../css/work.css'
 import { Badge } from 'reactstrap';
+import api from '../api'
 
-const Work = () => {
-  return (
-    <div class="container">
-      <div>
-        <p><h5>LINE Android developer</h5></p>
-        <p><div class="title">Overlay stickers</div> </p>
-        <div class="since title-margin">2019</div>
-        <div class="description_title font-weight-bold">Description</div>
-        <div class="description description-margin">Overlay video with stickers</div>
+class Work extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      experiences: [],
+      columns: [],
+      isLoading: false,
+    }
+  }
 
-        <div class="tech font-weight-bold">Used :{' '}
-          <Badge color="secondary">Kotlin</Badge>{' '}
-          <Badge color="secondary">OpenGL ES</Badge>
-        </div>
+  componentDidMount = async () => {
+    this.setState({ isLoading: true })
+
+    await api.getAllExperiences().then(experiences => {
+      this.setState({
+        experiences: experiences.data.data,
+        isLoading: false,
+      })
+      console.log('Connected to experiences!' + experiences);
+    })
+  }
+
+  render() {
+    const { experiences, isLoading } = this.state
+    return (
+      <div class="container">
+        {
+          experiences.map((item, index) => (
+            <div>
+              <br /><br /><br />
+              <p><h5>{item.title}</h5></p>
+              <p><div class="title">{item.sub_title}</div> </p>
+              <div class="since title-margin">{item.start_date}~{item.end_date}</div>
+              <div class="description_title font-weight-bold">Description</div>
+              <div class="description description-margin">{item.description}</div>
+
+              <div class="tech font-weight-bold">Used :{' '}
+                <Badge color="secondary">Kotlin</Badge>{' '}
+                <Badge color="secondary">OpenGL ES</Badge>
+              </div>
+            </div>
+          ))
+        }
       </div>
-    </div>
-  );
+    );
+  };
 }
 
 export default Work;
