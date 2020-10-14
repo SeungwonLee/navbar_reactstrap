@@ -35,7 +35,7 @@ class Work extends Component {
               <br /><br /><br />
               <p><h5>{item.title}</h5></p>
               <p><div class="title">{item.sub_title}</div> </p>
-              <div class="since title-margin">{item.start_date}~{item.end_date}</div>
+              <div class="since title-margin">{item.start_time}~{item.end_time}</div>
               <div class="description_title font-weight-bold">Description</div>
               <div class="description description-margin">{item.description}</div>
 
